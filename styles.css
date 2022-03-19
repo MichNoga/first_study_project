@@ -1,0 +1,22 @@
+.form-field {
+    display: block;
+}
+.field::placeholder {
+    color: violet;
+}
+
+.field:focus {
+    background-color: yellow;
+}
+
+.field:checked ~ .form-label {
+    color: green;
+}
+
+.field:invalid {
+    border: 1px solid red;
+}
+
+.form-button:enabled {
+    color: blue
+}

@@ -5,8 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>first_study_project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>first_study_project 456</h1>
+    <h1>first_study_project</h1>
+    <form action="" method="">
+
+        <label class="form-field">
+            Email:
+            <input class="field" type="email" name="email" placeholder="Email" required>
+        </label>
+        
+        <label class="form-field">
+            Username:
+            <input class="field" type="text" name="username" placeholder="Username">
+        </label>
+
+        <label class="form-field">
+            Password:
+            <input 
+            type="password" 
+            name="password" 
+            placeholder="Password"
+            class="field"
+            required
+            minlength="4"
+            maxlength="16"
+            pattern="\d+"
+            >
+        </label>
+
+        <div class="form-field">
+            Choose your sex:
+            <label>
+                <input type="radio" name="sex" value="m">
+                - man
+            </label>
+            <label>
+                <input type="radio" name="sex" value="f">
+                - woman
+            </label>
+        </div>
+
+        <label class="form-field">
+            Choose your favorite color
+
+            <select name="color" required multiple>
+                <option value=""disabled selected>Choose a color</option>
+                <option value="#f00">Red</option>    
+                <option value="#0f0">Green</option>    
+                <option value="#00f">Blue</option>    
+            <select>
+        </label>
+
+
+
+        <label class="form-field">
+            <input type="checkbox"
+            name="terms"
+            id="terms-and-conditions"
+            class="field"
+            required
+            >
+            <label class="form-label" for="terms-and-conditions">
+                I agree terms and conditions
+            </label>
+        </label>
+
+        <label class="form-field">
+            <input type="checkbox"
+            name="remember"
+            class="field"
+            value="123"
+            checked
+            required
+            >
+            Remember me
+        </label>
+
+        <button type="reset" class="form-button">Reset</button>
+        <button type="submit" class="form-button">Sign up</button>
+        <button type="button" class="form-button" disabled>Button</button>
+    </form>
 </body>
 </html>
