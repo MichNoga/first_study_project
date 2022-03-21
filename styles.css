@@ -1,5 +1,6 @@
 .form-field {
     display: block;
+    margin: 2px;
 }
 .field::placeholder {
     color: violet;
@@ -19,4 +20,8 @@
 
 .form-button:enabled {
     color: blue
+}
+
+.field:outline {
+    border-color: blue;
 }

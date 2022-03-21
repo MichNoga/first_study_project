@@ -18,7 +18,7 @@
         
         <label class="form-field">
             Username:
-            <input class="field" type="text" name="username" placeholder="Username">
+            <input class="field" type="text"  name="username" placeholder="Username">
         </label>
 
         <label class="form-field">
@@ -32,6 +32,7 @@
             minlength="4"
             maxlength="16"
             pattern="\d+"
+            tabindex="1"
             >
         </label>
 
@@ -50,7 +51,7 @@
         <label class="form-field">
             Choose your favorite color
 
-            <select name="color" required multiple>
+            <select name="color" required>
                 <option value=""disabled selected>Choose a color</option>
                 <option value="#f00">Red</option>    
                 <option value="#0f0">Green</option>    
@@ -58,7 +59,71 @@
             <select>
         </label>
 
+        <textarea name="feedback"
+        placeholder="Why are you here?"
+        cols="30"
+        rows="10"
+        required></textarea>
 
+        <div contenteditable>Dont touch this text!</div>
+
+        <label class="form-field">
+            Your girlfriends' nudes send here: 
+            <input type="file"
+            name="nudes"
+            accept="image/png, image/jpeg">
+        </label>
+
+        <label class="form-field">
+            <input type="hidden"
+            name="role"
+            value="admin">
+        </label>
+
+        <label class="form-field">
+            Strangest color:
+            <input type="color"
+            value="#f00">
+        </label>
+
+        <label class="form-field">
+            Fav num (10-100):
+            <input type="number"
+            min="10"
+            max="100"
+            step="3">
+        </label>
+       
+        <label class="form-field">
+            First drive date:
+            <input type="date"
+            min="1900-01-01"
+            max="2030-12-31"
+            >
+        </label>
+       
+        <label class="form-field">
+            First sex month:
+            <input type="month"
+            min="1900-01"
+            max="2030-12"
+            >
+        </label>
+       
+        <label class="form-field">
+            First time on mind:
+            <input type="time"
+            >
+        </label>
+        
+        <label class="form-field">
+            Tel:
+            <input type="tel"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+            >
+        </label>
 
         <label class="form-field">
             <input type="checkbox"
@@ -81,6 +146,17 @@
             required
             >
             Remember me
+        </label>
+        
+        <label class="form-field">
+            How coll is this form? <input type="range"
+            name="coolness"
+            value="23"
+            min="10"
+            max="100"
+            step="10"
+            required
+            >
         </label>
 
         <button type="reset" class="form-button">Reset</button>
